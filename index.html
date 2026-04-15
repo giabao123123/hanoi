@@ -29,18 +29,15 @@
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
-
     <aside id="backToTop">
       <a href="#hero" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-
     <aside class="box w3-right" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Hà Nội!</p>
+      <p class="text">Chào mừng đến với thành phố Hà Nội!</p>
     </aside>
-
     <header class="w3-top">
       <nav class="w3-bar w3-white w3-padding w3-card">
         <a href="#home" class="w3-bar-item neon-box">Hà Nội</a>
@@ -79,32 +76,6 @@
             <a href="https://giabao123123.github.io/trochoihanoi/">TRÒ CHƠI</a>
           </li>
         </ul>
-        <script>
-          const menuLinks = document.querySelectorAll("#menu-list a");
-          const menuToggle = document.getElementById("menu-toggle");
-          menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-              if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-              }
-            });
-          });
-        </script>
-        <script>
-          const audio = document.getElementById("bgMusic");
-          const btn = document.getElementById("toggleBtn");
-          if (btn && audio) {
-            btn.addEventListener("click", () => {
-              if (audio.paused) {
-                audio.play();
-                btn.textContent = "⏸ Tắt nhạc";
-              } else {
-                audio.pause();
-                btn.textContent = "▶ Phát nhạc";
-              }
-            });
-          }
-        </script>
         <nav
           style="
             background: linear-gradient(180deg, #ff9800, #ff5722);
@@ -148,21 +119,6 @@
         </nav>
       </nav>
     </header>
-    <script>
-      const menuScroll = document.querySelector(".menu-scroll");
-      const btnLeft = document.querySelector(".left-btn");
-      const btnRight = document.querySelector(".right-btn");
-      const step = 200;
-      if (btnRight && btnLeft && menuScroll) {
-        btnRight.addEventListener("click", () => {
-          menuScroll.scrollLeft += step;
-        });
-        btnLeft.addEventListener("click", () => {
-          menuScroll.scrollLeft -= step;
-        });
-      }
-    </script>
-
     <main class="w3-content" style="max-width: 1100px">
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
@@ -182,7 +138,6 @@
             chăn nuôi và đánh bắt cá. Thế kỷ III TCN, Thục Phán đóng đô tại Cổ
             Loa, lần đầu Hà Nội trở thành trung tâm chính trị.
           </p>
-
           <p>
             Đầu thế kỷ II TCN, Âu Lạc thất bại trước quân Tần, bắt đầu giai đoạn
             <u>1.000</u> năm Bắc thuộc. Hà Nội thuộc quận Giao Chỉ dưới thời nhà
@@ -191,7 +146,6 @@
             tới năm 602. Thế kỷ IX, Cao Biền xây thành Đại La, Hà Nội còn được
             gọi là đất "Long Đỗ".
           </p>
-
           <p>
             <mark
               ><strong
@@ -206,7 +160,6 @@
             Giám (1076) được xây dựng. Thăng Long nhanh chóng trở thành trung
             tâm văn hóa, chính trị và kinh tế.
           </p>
-
           <p>
             Thời nhà Trần, Thăng Long được chia thành <u>61</u> phường. Thành
             phố thu hút cư dân nước ngoài, xuất hiện tầng lớp thị dân và nhiều
@@ -215,7 +168,6 @@
             Đông Quan. Sau khởi nghĩa Lam Sơn, Lê Lợi lập nhà Lê, đổi Thăng Long
             thành Đông Kinh, phục hồi vị thế kinh đô.
           </p>
-
           <p>
             <mark><strong>Thời nhà Nguyễn và Pháp thuộc</strong></mark>
           </p>
@@ -228,7 +180,6 @@
             dân số khoảng <u>100.000</u> người bản địa và <u>4.000</u> người
             châu Âu.
           </p>
-
           <p>
             Đầu thế kỷ XX, Hà Nội trở thành thủ đô của Liên bang Đông Dương,
             nhiều công trình hiện đại được xây dựng như Nhà hát Lớn, Ga Hà Nội,
@@ -236,7 +187,6 @@
             văn hóa phương Tây lan rộng, hình thành tầng lớp tư sản và thay đổi
             bộ mặt đô thị.
           </p>
-
           <p>
             <mark><strong>Trong hai cuộc chiến tranh</strong></mark>
           </p>
@@ -250,7 +200,6 @@
             thành với <u>37.000</u> dân và <u>4</u> huyện ngoại thành với
             <u>16.000</u> dân.
           </p>
-
           <p>
             <mark><strong>Hà Nội ngày nay</strong></mark>
           </p>
@@ -265,16 +214,14 @@
             và mật độ dân số.
           </p>
         </article>
-
         <p style="font-size: 15px">
           (nguồn thông tin:
           <a
             href="https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i"
             target="_blank"
-            >wiki Hà Nội</a
+            >Wikipedia Hà Nội</a
           >)
         </p>
-
         <figure class="w3-center">
           <img
             src="https://static.vinwonders.com/production/gioi-thieu-ve-ha-noi-banner.jpg"
@@ -292,7 +239,6 @@
         </figure>
       </section>
       <hr />
-
       <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           ĐỊA LÝ
@@ -351,7 +297,6 @@
             >
           </p>
         </article>
-
         <figure class="w3-center">
           <img
             src="https://vinhome.com.vn/wp-content/uploads/2025/06/HA-NOI.jpg"
@@ -370,7 +315,6 @@
         </figure>
       </section>
       <hr />
-
       <section
         class="w3-row-padding w3-padding-16 w3-content"
         id="DIEUKIENTUNHIEN"
@@ -388,7 +332,6 @@
             bằng thấp, bằng phẳng và vùng đồi núi tập trung ở ngoại thành phía
             Bắc và Tây.
           </p>
-
           <p>
             <mark><strong>Đê tả sông Hồng và núi Ba Vì</strong></mark
             ><br />
@@ -402,7 +345,6 @@
             Nam <u>1031 m</u>, Hàm Lợn <u>462 m</u>. Đỉnh Ba Vì là
             <strong>điểm cao nhất của Hà Nội</strong>.
           </p>
-
           <p>
             <mark><strong>Thủy văn</strong></mark
             ><br />
@@ -414,7 +356,6 @@
             <u>khoảng 500 ha</u> và Hồ Gươm ở trung tâm lịch sử, cùng nhiều hồ
             khác như Trúc Bạch, Thiền Quang, Thủ Lệ.
           </p>
-
           <p>
             <mark><strong>Ô nhiễm môi trường nước</strong></mark
             ><br />
@@ -428,11 +369,10 @@
         </article>
         <p style="font-size: 15px">
           (nguồn thông tin:
-          <a href="https://vi.wikipedia.org/wiki/Gia_Lai">wiki-Gia Lai</a>)
+          <a href="https://vi.wikipedia.org/wiki/Gia_Lai">Wikipedia Hà Nội</a>)
         </p>
       </section>
       <hr />
-
       <section
         class="w3-container w3-padding-16 w3-content"
         style="overflow-x: auto"
@@ -451,7 +391,6 @@
             lạnh do nằm sâu trong nội địa và gần như không có vùng nước lớn giúp
             điều hòa khí hậu.
           </p>
-
           <p>
             <strong><mark>Phân chia mùa và đặc điểm thời tiết:</mark></strong
             ><br />
@@ -467,7 +406,6 @@
             <u>tháng 9 đến giữa tháng 11</u>, Hà Nội có những ngày thu mát mẻ
             nhờ các đợt không khí lạnh yếu.
           </p>
-
           <p>
             <strong><mark>Nhiệt độ trung bình và cực đoan:</mark></strong
             ><br />
@@ -479,7 +417,6 @@
             nhận <u>42,8 °C</u>. Nhiệt độ trung bình cả năm là <u>23,6 °C</u>,
             lượng mưa trung bình hàng năm khoảng <u>1.500 – 1.900 mm</u>.
           </p>
-
           <p>
             <strong
               ><mark>Kỷ lục thời tiết và hiện tượng đặc biệt:</mark></strong
@@ -492,7 +429,6 @@
             núi Ba Vì ngày <u>24/1/2016</u> với nhiệt độ <u>0 °C</u>.
           </p>
         </article>
-
         <figure>
           <table
             style="
@@ -840,17 +776,20 @@
             <a
               href="https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i"
               target="_blank"
-              >wiki-Hà Nội</a
+              >Wikipedia Hà Nội</a
             >)
           </figcaption>
         </figure>
       </section>
       <hr />
-
       <section class="w3-row-padding w3-padding-16" id="THOITIET">
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           DỰ BÁO THỜI TIẾT TRONG TỈNH
         </h1>
+        <p>
+          ⚠️ Dữ liệu thời tiết hiện vẫn theo đơn vị hành chính cũ — chưa cập
+          nhật sau sáp nhập tỉnh.
+        </p>
         <div
           style="
             max-width: 760px;
@@ -874,7 +813,6 @@
           >
             Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
           </p>
-
           <div
             style="position: relative; max-width: 440px; margin: 0 auto 22px"
           >
@@ -928,7 +866,6 @@
               "
             ></div>
           </div>
-
           <div
             id="tt-box"
             style="
@@ -965,7 +902,6 @@
             </div>
           </div>
         </div>
-
         <script>
           var TT_AREAS = [
             {
@@ -1119,7 +1055,6 @@
               widget: `<iframe src="https://thoitiet247.vn/widget/embed/ha-noi/soc-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
-
           function ttNorm(s) {
             return s
               .toLowerCase()
@@ -1127,9 +1062,7 @@
               .replace(/[\u0300-\u036f]/g, "")
               .replace(/đ/g, "d");
           }
-
           var ttFiltered = TT_AREAS.slice();
-
           function ttFilter() {
             var q = ttNorm(document.getElementById("tt-input").value.trim());
             ttFiltered = q
@@ -1140,13 +1073,11 @@
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttShow() {
             ttFiltered = TT_AREAS.slice();
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttRender() {
             var dd = document.getElementById("tt-drop");
             if (!ttFiltered.length) {
@@ -1177,7 +1108,6 @@
               })
               .join("");
           }
-
           function ttSelect(idx) {
             var a = TT_AREAS[idx];
             document.getElementById("tt-input").value = a.name;
@@ -1186,13 +1116,10 @@
             if (a.parent) {
               locationTitle += " (" + a.parent + ")";
             }
-
             document.getElementById("tt-name").textContent = locationTitle;
             document.getElementById("tt-box").style.display = "block";
-
             var wrap = document.getElementById("tt-widget-wrap");
             var noEmbed = document.getElementById("tt-noembed");
-
             if (a.widget && a.widget.trim()) {
               wrap.innerHTML = a.widget;
               wrap.style.display = "block";
@@ -1202,23 +1129,44 @@
               wrap.style.display = "none";
               noEmbed.style.display = "block";
             }
-
             document.getElementById("tt-box").scrollIntoView({
               behavior: "smooth",
               block: "start",
             });
           }
-
           document.addEventListener("click", function (e) {
             var inp = document.getElementById("tt-input");
             var drop = document.getElementById("tt-drop");
             if (drop && e.target !== inp && !drop.contains(e.target))
               drop.style.display = "none";
           });
+          const menuScroll = document.querySelector(".menu-scroll");
+          const btnLeft = document.querySelector(".left-btn");
+          const btnRight = document.querySelector(".right-btn");
+          const step = 200;
+          if (btnRight && btnLeft && menuScroll) {
+            btnRight.addEventListener("click", () => {
+              menuScroll.scrollLeft += step;
+            });
+            btnLeft.addEventListener("click", () => {
+              menuScroll.scrollLeft -= step;
+            });
+          }
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+          function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("w3-hide");
+          }
         </script>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="contact">
         <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
         <article>
@@ -1403,7 +1351,6 @@
               </p>
             </figcaption>
           </figure>
-
           <p>
             <strong><mark>Lịch sử dân cư Thăng Long – Hà Nội:</mark></strong
             ><br />
@@ -1417,7 +1364,6 @@
             (nay có thể là phố Hàng Ngang). Quá trình đổi thay dân cư và địa
             giới hành chính liên tục kéo dài đến ngày nay.
           </p>
-
           <p>
             <strong><mark>Dân cư thời Pháp thuộc và sau 1945:</mark></strong
             ><br />
@@ -1430,7 +1376,6 @@
             phả lâu đời. Một số dòng họ nội thành vẫn định cư liên tục từ thế kỷ
             XV, ví dụ dòng họ Nguyễn ở phường Đông Tác.
           </p>
-
           <p>
             <strong><mark>Tăng trưởng dân số và mở rộng địa giới:</mark></strong
             ><br />
@@ -1448,7 +1393,6 @@
             <u>49,2%</u> (3,96 triệu) sống ở thành thị, <u>50,8%</u> (4,09
             triệu) sống ở nông thôn.
           </p>
-
           <p>
             <strong><mark>Cấu trúc dân tộc và tôn giáo:</mark></strong
             ><br />
@@ -1463,7 +1407,6 @@
             - Các tôn giáo khác: Cao Đài, Hồi giáo, Baha'i, Phật giáo Hòa Hảo,
             Minh Lý đạo, Minh Sư đạo, Tịnh độ cư sĩ Phật hội Việt Nam.
           </p>
-
           <p>
             <strong><mark>Mật độ dân số:</mark></strong
             ><br />
@@ -1474,7 +1417,6 @@
             - Quận Đống Đa: > <u>42.000 người/km²</u> (2018)<br />
             - Huyện ngoại thành Ba Vì, Mỹ Đức: <u>dưới 1.000 người/km²</u>.
           </p>
-
           <p style="font-size: 15px">
             (Nguồn thông tin:
             <a
@@ -1486,7 +1428,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
         <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
         <article>
@@ -1504,7 +1445,6 @@
             nghề và phố nghề phản ánh sự đa dạng văn hóa, đồng thời là minh
             chứng cho lịch sử phát triển lâu đời của Thủ đô.
           </p>
-
           <p>
             <strong><mark>2. Âm nhạc</mark></strong
             ><br />
@@ -1515,7 +1455,6 @@
             <u>Hồ Gươm</u>, <u>Hồ Tây</u>, các mùa hoa hay phố cổ Hà Nội phản
             ánh nét đẹp tinh tế và độc đáo của Thủ đô.
           </p>
-
           <p>
             <strong><mark>3. Văn học</mark></strong
             ><br />
@@ -1526,7 +1465,6 @@
             trở thành đề tài được khai thác sâu sắc, làm nổi bật nét thanh lịch,
             tinh tế và nếp sống đặc trưng của người Hà Nội.
           </p>
-
           <p>
             <strong><mark>4. Điện ảnh và truyền hình</mark></strong
             ><br />
@@ -1537,7 +1475,6 @@
             người Thủ đô qua nhiều thời kỳ. Điện ảnh đã trở thành phương tiện
             quan trọng để giới thiệu Hà Nội với công chúng trong và ngoài nước.
           </p>
-
           <p>
             <strong><mark>5. Hội họa</mark></strong
             ><br />
@@ -1547,7 +1484,6 @@
             cuộc sống, con người và cảnh vật Thủ đô, góp phần làm giàu kho tàng
             nghệ thuật của Việt Nam.
           </p>
-
           <p>
             <strong><mark>6. Văn hóa ứng xử và đời sống đô thị</mark></strong
             ><br />
@@ -1559,7 +1495,6 @@
             giữ được nét thanh lịch, tinh tế trong nhiều hoạt động văn hóa và
             đời sống hằng ngày.
           </p>
-
           <h2 style="font-size: 40px">
             <strong><mark>LỄ HỘI:</mark></strong>
           </h2>
@@ -2136,7 +2071,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="DITICH">
         <h1 class="w3-center" style="font-size: 50px">
           DI TÍCH, DI SẢN VĂN HOÁ
@@ -2643,7 +2577,6 @@
               </li>
             </ol>
           </details>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -3265,7 +3198,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
         <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
         <article>
@@ -3282,7 +3214,6 @@
             trạng nguyên thấp hơn các vùng như <u>Bắc Ninh</u>,
             <u>Hải Dương</u> và <u>Nam Định</u>.
           </p>
-
           <p>
             <strong><mark>2. Giáo dục thời Pháp thuộc</mark></strong
             ><br />
@@ -3292,7 +3223,6 @@
             <u>Trường Y khoa Đông Dương</u> và <u>Trường Bách nghệ Hà Nội</u>,
             đặt nền móng cho giáo dục đại học hiện đại ở Việt Nam.
           </p>
-
           <p>
             <strong><mark>3. Giáo dục phổ thông</mark></strong
             ><br />
@@ -3304,7 +3234,6 @@
             tiếng như THPT chuyên Hà Nội – Amsterdam, Chu Văn An, Nguyễn Huệ và
             Trần Phú.
           </p>
-
           <p>
             <strong
               ><mark>4. Trường trung học chuyên và xóa mù chữ</mark></strong
@@ -3316,7 +3245,6 @@
             mù chữ của cả nước, nhưng đến năm <u>2017</u> đã hoàn thành chương
             trình xóa mù chữ mức độ 2.
           </p>
-
           <p>
             <strong><mark>5. Giáo dục đại học</mark></strong
             ><br />
@@ -3327,7 +3255,6 @@
             Bách khoa Hà Nội, Đại học Y Hà Nội giữ vai trò quan trọng trong đào
             tạo nguồn nhân lực.
           </p>
-
           <p>
             <strong><mark>6. Bất cập và định hướng phát triển</mark></strong
             ><br />
@@ -3342,12 +3269,11 @@
         <p style="font-size: 15px">
           (nguồn thông tin:
           <a href="https://vi.wikipedia.org/wiki/H%E1%BA%A3i_Ph%C3%B2ng"
-            >wiki-Hải Phòng</a
+            >Wikipedia Hà Nội</a
           >)
         </p>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
         <br />
         <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
@@ -3362,7 +3288,6 @@
             <u>100.000 tỷ đồng</u>, phản ánh sự phát triển ổn định của nền kinh
             tế Thủ đô.
           </p>
-
           <p>
             <strong><mark>2. Năm 2019</mark></strong
             ><br />
@@ -3375,7 +3300,6 @@
             sơ bộ năm 2019 là <u>6,403 triệu đồng/tháng</u>, xếp hạng
             <u>3</u> cả nước.
           </p>
-
           <p>
             <strong><mark>3. Năm 2020</mark></strong
             ><br />
@@ -3405,7 +3329,6 @@
             <u>280,5 nghìn tỷ đồng</u>, tăng <u>3,9%</u> so với năm 2019.
           </p>
         </article>
-
         <h2 style="text-align: center">Biểu đồ GRDP Hà Nội 2016–2024</h2>
         <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
         <figure
@@ -3431,7 +3354,6 @@
             </p>
           </figcaption>
         </figure>
-
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
           const ctx = document
@@ -3501,7 +3423,6 @@
         </script>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
         <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
         <h2>-Hà Nội có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
@@ -4380,7 +4301,6 @@
         </ol>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="DULICH">
         <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
         <h2>-Hà Nội có những điểm du lịch nổi tiếng như:</h2>
@@ -5237,7 +5157,6 @@
                 tranh nghệ thuật khổng lồ đầy màu sắc, tái hiện sinh động văn
                 hóa và lịch sử Thủ đô. Mỗi mảng tường gốm đều mang dấu
               </p>
-
               <p class="detail-content">
                 Con đường gốm sứ Hà Nội trải dài gần 4km, được xem như một bức
                 tranh nghệ thuật khổng lồ đầy màu sắc, tái hiện sinh động văn
@@ -5442,7 +5361,6 @@
         </ol>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
         <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
         <article style="font-size: 20px; line-height: 1.7">
@@ -5456,7 +5374,6 @@
             để phát triển mạnh mẽ, mở ra cơ hội trở thành trung tâm sáng tạo,
             đổi mới và hội nhập quốc tế.
           </p>
-
           <p>
             <mark><strong>2. Tiềm năng kinh tế và doanh nghiệp:</strong></mark
             ><br />
@@ -5468,7 +5385,6 @@
             chính quyền hai cấp sẽ đóng vai trò quan trọng trong việc quản lý,
             hỗ trợ và thúc đẩy phát triển kinh tế bền vững.
           </p>
-
           <p>
             <mark
               ><strong
@@ -5481,7 +5397,6 @@
             thái bền vững, giảm ô nhiễm và phát thải, góp phần nâng cao sức khỏe
             cộng đồng.
           </p>
-
           <p>
             <mark><strong>4. Văn hóa – xã hội – con người:</strong></mark
             ><br />
@@ -5492,7 +5407,6 @@
             thiện, đồng thời thành phố ưu tiên bảo đảm an toàn cho cộng đồng và
             du khách, đặc biệt trong phòng cháy chữa cháy, cứu hộ cứu nạn.
           </p>
-
           <p>
             <mark
               ><strong>5. Hội nhập quốc tế và vai trò toàn cầu:</strong></mark
@@ -5501,7 +5415,6 @@
             chủ động hội nhập quốc tế sâu rộng, khẳng định vai trò trong mạng
             lưới các thủ đô và thành phố lớn trên thế giới.
           </p>
-
           <p>
             <mark><strong>6. Lãnh đạo và bộ máy tổ chức:</strong></mark
             ><br />
@@ -5512,7 +5425,6 @@
             diện về hành chính, kinh tế, văn hóa, xã hội, hướng tới một Thủ đô
             văn minh, hiện đại và đáng sống.
           </p>
-
           <p>
             <mark><strong>Kết luận:</strong></mark
             ><br />
@@ -5536,14 +5448,8 @@
       </section>
       <hr />
     </main>
-
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("w3-hide");
-      }
-    </script>
   </body>
 </html>
